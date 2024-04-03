@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>War</title>
+        <link rel="stylesheet" href="batalla.css">
+    </head>
+    <body>
+        <section id="elegir-mascota">
+            <h1 class="titulo">WAR!!! 🔥💧🗻</h1>
+            <h2 class="subtitulo">Elige tu mascota:</h2>
+            <div class="tarjetas-ataques">
+                <input type="radio" name="mascota" id="fire"/>
+                <label class="tarjeta-de-war" for="fire">
+                    <p>Dragon</p>
+                    <img src="../img/turtle.png" alt="Fire">
+                </label>
+                <input type="radio" name="mascota" id="water"/>
+                <label class="tarjeta-de-war" for="water">
+                    <p>Tortu</p>
+                    <img src="../img/gg.png" alt="Water">
+                </label>
+                <input type="radio" name="mascota" id="rock"/>
+                <label class="tarjeta-de-war" for="rock">
+                    <p>Plantin</p>
+                    <img src="../img/Tree.png" alt="Rock">
+                </label>
+                
+            </div>
+            <button id="boton-mascota">seleccionar</button>
+        </section>
+
+        <section id="elegir-ataque">
+            <h1 class="titulo">WAR!!! 🔥💧🗻</h1>
+            <h2 class="subtitulo">Elige tu ataque:</h2>
+            <div>    
+                <button id="boton-fire" class="boton-de-ataque">Fire🔥</button>
+                <button id="boton-water" class="boton-de-ataque">Water💧</button>
+                <button id="boton-rock" class="boton-de-ataque">Rock🗻</button>
+            </div>
+
+            <div id="mensajes">
+                <p id="resultado">!!!Comenzamos!!!</p>
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+            
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">3</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataque-jugador"></div>
+                </div>
+                <div class="ataques-enemigo">
+                    <p id="vidas-enemigo">3</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataque-enemigo"></div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="batalla.js"></script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mundo-Mon</title>
+        <script src="Mon.js"></script>
+        <link rel="stylesheet" href="Mon.css">
+    </head>
+
+    <body>
+        <section id="seleccionar-personaje">
+            <h1 class="titulo">Mundo-Mon</h1>
+            <h2 class="sub-personaje">Selecciona tu personaje</h2>
+            <div class="tarjetas">
+            <label class="tarjeta-mon" for="enano">
+                <p>Enano</p>
+                <img src="../img/d1.jpg" alt="Enano">
+            </label>
+            <input type="radio" name="personajes" id="enano"/>
+            <label class="tarjeta-mon" for="elfo">
+                <p>Elfo</p>
+                <img src="../img/d2.jpg" alt="Elfo">
+            </label>
+            <input type="radio" name="personajes" id="elfo"/>
+            <label class="tarjeta-mon" for="humano">
+                <p>Humano</p>
+                <img src="../img/d3.jpg" alt="Humano">
+            </label>
+            <input type="radio" name="personajes" id="humano"/>
+            </div>
+            
+            <button id="boton-personaje">seleccionar</button>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo">Mundo-Mon</h1>
+            <h2 class="sub-ataque">Elige tu ataque:</h2>
+
+            <div>
+                <button id="boton-golpe">Golpe</button>
+                <button id="boton-disparo">Disparo</button>
+                <button id="boton-flama">Flama</button>
+            </div>
+            
+            <div>
+                <section id="mensajes">
+                </section>
+                
+                <div id="resultado"></div>
+                <div id="ataqueJugador"></div>
+                <div id="ataqueEnemigo"></div>
+
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+            
+            <div>
+                <p>Tu personaje <span id="personaje-jugador"></span> tiene <span id="vidas-jugador">3</span> de vida</p>
+                <p>El personaje enemigo <span id="personaje-enemigo"></span> tiene <span id="vidas-enemigo">3</span> de vida</p>
+            </div>
+        </section>
+    </body>
+</html>

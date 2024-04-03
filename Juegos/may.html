@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mundo</title>
+        <script src="may.js"></script>
+        <link rel="stylesheet" href="may.css">
+    </head>
+
+    <body>
+        <section id="seleccionar-personaje">
+            <h1 class="titulo">Mundo</h1>
+            <h2 class="sub-personaje">selecciona tu personaje</h2>
+            <div class="tarjetas">
+            <label for="asesino">Asesino</label>
+            <input type="radio" name="personaje" id="asesino"/>
+            <label for="aventurero">Aventurero</label>
+            <input type="radio" name="personaje" id="aventurero"/>
+            <label for="mago">Mago</label>
+            <input type="radio" name="personaje" id="mago"/>
+            <label for="mercenario">Mercenario</label>
+            <input type="radio" name="personaje" id="mercenario"/>
+            <label for="paladín">Paladín</label>
+            <input type="radio" name="personaje" id="paladín"/>
+            <label for="santo">Santo</label>
+            <input type="radio" name="personaje" id="santo"/>
+            </div>
+            <button id="boton-personaje">seleccionar</button>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo">Mundo</h1>
+            <h2 class="sub-ataque">elige tu ataque</h2>
+            <div>
+                <button id="boton-corte">Corte 🔪</button>
+                <button id="boton-flechazo">Flechazo 🏹</button>
+                <button id="boton-quemar">Quemar 🔥</button>
+                <button id="boton-aturdir">Aturdir 💣</button>
+                <button id="boton-desangro">Desangro 🩸</button>
+                <button id="boton-purificar">Purificar ✨</button>
+            </div>
+            <div>
+                <section id="mensajes">
+                </section>
+                
+                <div id="resultado"></div>
+            
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </div>
+            <div>
+                <div class="vidas">
+                    <p id="vidas-jugador">3</p>
+                    <p id="personaje-jugador"></p>
+                    <div id="ataqueJugador"></div>
+                </div>
+                <div>
+                    <p id="vidas-enemigo">3</p>
+                    <p id="personaje-enemigo"></p>
+                    <div id="ataqueEnemigo"></div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>
